@@ -1,0 +1,121 @@
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.login-form input[type="password"]:focus,
+.login-form input[type="email"]:focus {
+    outline: none;
+    border-color: #4267B2;
+    box-shadow: 0 0 0 2px rgba(66, 103, 178, 0.2);
+}
+
+
+
+.login-form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    text-align: center;
+    color: #201d1d;
+}
+
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #4267B2;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+
+
+}
+.login-form input[type="submit"]:hover {
+    background-color: #385898;
+}
+
+
+.login-form .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/* Add the following CSS styles in your CSS file or style tag */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-google {
+    background-color: #4267B2;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .btn-google:hover {
+    background-color: #385898;
+  }
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.rating {
+    display: inline-block;
+  }
+
+  .rating input[type="radio"] {
+    display: none;
+  }
+
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+  }
+
+  .rating label:before {
+    content: "\2605";
+    font-size: 24px;
+  }
+  .rating input[type="radio"]:checked ~ label,
+  .rating input[type="radio"]:hover ~ label {
+    color: #ffcc00;
+  }
+  .move-left {
+    position: relative;
+    left: -20px;
+  }

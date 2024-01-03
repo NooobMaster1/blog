@@ -26,6 +26,12 @@
                 @empty
                     <!-- Handle the case when $posts is empty -->
                 @endforelse
+                <a href="/admin/post/create" class="ml-3 text-xs font-bold uppercase text-blue-500">
+                    <span class="">create new post</span>
+                </a>
+                @admin
+                    <a href="{{ route('users') }}" class="ml-3 text-xs font-bold uppercase text-blue-500">view all users</a>
+                @endadmin
                 <a href="/" class="ml-3 text-xs font-bold uppercase text-blue-500">
                     <span class="">Home</span>
                 </a>
@@ -35,10 +41,6 @@
                         <span class=" ">Logout</span>
                     </button>
                 </form>
-
-                <a href="/admin/post/create" class="ml-3 text-xs font-bold uppercase text-blue-500">
-                    <span class="">create new post</span>
-                </a>
             @else
                 <a href="/register" class="text-xs font-bold uppercase text-blue-500">
                     <span class="">Register</span>
@@ -48,6 +50,8 @@
                 </a>
 
             @endauth
+
+
 
 
         </div>
@@ -66,10 +70,12 @@
                         <label for="feedback" class="flex items-center">
                             Feedback:
                         </label>
-                        <textarea name="feedback" id="feedback" rows="4" class="ml-5 resize-none border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"></textarea>
+                        <textarea name="feedback" id="feedback" rows="4"
+                            class="ml-5 resize-none border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"></textarea>
                     </div>
 
-                    <button type="submit" class=" mb-3 transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
+                    <button type="submit"
+                        class=" mb-3 transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
                         Submit
                     </button>
                 </form>

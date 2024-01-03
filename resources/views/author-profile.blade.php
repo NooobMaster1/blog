@@ -15,10 +15,10 @@
                 <tbody>
 
                     <tr class="border-b">
-                        <th class="text-left p-3 px-5">title</th>
-                        <th class="text-left p-3 px-5">category</th>
-                        <th class="text-left p-3 px-5">excerpt</th>
-                        <th class="text-left p-3 px-5">published at</th>
+                        <th class="text-left p-3 px-5">ID</th>
+                        <th class="text-left p-3 px-5">User</th>
+                        <th class="text-left p-3 px-5">email</th>
+
 
                         <th></th>
                     </tr>

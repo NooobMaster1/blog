@@ -38,6 +38,8 @@ Route::get('categories/{category:slug}', [CategoryController::class, 'indexCat']
 
 Route::get('user/{user}', [UserController::class, 'posts']);
 
+Route::get('/allUsers', [UserController::class, 'adminUser'])->middleware('admin')->name('users');
+
 Route::get('register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('register', [RegisterController::class, 'store'])->middleware('guest');
 

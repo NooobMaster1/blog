@@ -28,11 +28,16 @@ class UserController extends Controller
     {
         $user = $user->posts()->with('category')->get();
 
+
         return view('author-profile', [
             'posts' => $user
         ]);
     }
+    public function adminUser()
+    {
 
+        return view('users', ['users' => User::all()] ,['posts' => Post::all()]);
+    }
 
     public function editPostCreate(Post $posts)
     {

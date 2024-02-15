@@ -16,10 +16,11 @@
 
                     <tr class="border-b">
                         <th class="text-left p-3 px-5">ID</th>
-                        <th class="text-left p-3 px-5">User</th>
-                        <th class="text-left p-3 px-5">email</th>
-
-
+                        <th class="text-left p-3 px-5">title</th>
+                        <th class="text-left p-3 px-5">category</th>
+                        <th class="text-left p-3 px-5">excerpt</th>
+                        <th class="text-left p-3 px-5">created at</th>
+                        <th class="text-left p-3 px-5">actions</th>
                         <th></th>
                     </tr>
                     @foreach ($posts as $post)

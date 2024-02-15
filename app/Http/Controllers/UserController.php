@@ -88,7 +88,7 @@ class UserController extends Controller
             $post->save();
             $user = auth()->user();
             // Redirect or return a response indicating success
-            return redirect()->route('author-profile', ['user' => $user->id])->with('success', 'Post deleted successfully');
+            return redirect()->route('author-profile', ['user' => $user->id])->with('success', 'Post edited successfully');
         } catch (\Exception $e) {
             // Handle any exceptions that occur during the update process
             return redirect()->back()->with('error', 'Failed to update post. Please try again.');

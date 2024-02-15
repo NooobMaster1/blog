@@ -14,9 +14,9 @@ return [
     |
     */
     'google' => [
-        'client_id' => env('GOOGLE_CLIENT_ID'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => 'http://127.0.0.1:8000/login/google/callback'
+        'client_id' => '984378471733-46gefetusmc2n1q7nb62aqj4a50ersmc.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://127.0.0.1:8000/login/google/callback',
     ],
 
     'mailgun' => [
